@@ -1,0 +1,260 @@
+/*
+	@name gain_web_app
+*/
+/* Only edit this if you know what you are doing! */
+
+html {
+	background:#000000 ;
+}
+
+body { padding: 0px;
+	height: 100vh;
+	overflow-y: scroll;
+	overflow-x: scroll;
+	-ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+}
+.body::-webkit-scrollbar {
+	display: none;
+}
+
+.header {
+	display: flex;
+    flex-direction: row;
+	justify-content: left;
+	align-items: center;
+	padding: 0px;
+	position: relative;
+	
+}
+
+.header_logo {
+	margin-left: 5%;
+	display: inline-block;
+}
+
+.header_input {
+	margin-left: 2%;
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0px;
+
+    position: relative;
+	
+}
+.input1 {
+	padding-left: 2%;
+	width: 100%;
+	height: 4vh;
+    flex-grow: 0;
+    margin: 0px 37px;
+	overflow: hidden;
+	font-size: 18px;
+	text-transform: uppercase;
+	-ms-border-radius: 50px;
+	-o-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	background:rgba(196,196,196,1);
+}
+
+.profile {
+	margin-left: 20%;
+	position: relative;
+	width: 5vh;
+	height: 5vh;
+	background-color:rgba(196,196,196,1);
+	background-size:cover;
+	border-radius: 50px;
+}
+
+.row {
+	overflow-y: scroll;
+	overflow-x: scroll;
+	-ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+}
+.row::-webkit-scrollbar {
+	display: none;
+}
+.main_column {
+	float: left;
+	min-width: 900px;
+	width: 66%;
+	margin: 1%;
+	height: 100%;
+	align-items: center;
+}
+.side_column {
+	min-width: 400px;
+	width: 30%;
+	float: right;
+	margin: 1%;
+}
+.investment_logo {
+	margin: 1%;
+}
+.investment {
+width: 100%;
+height: 694px;
+overflow-y: scroll;
+background: rgba(61, 60, 60, 0.57);
+border-radius: 15px;
+-ms-overflow-style: none;
+scrollbar-width: none;
+}
+.investment::-webkit-scrollbar {
+	display: none;
+}
+
+.index {
+	margin-top: 20px;
+	margin-left: 2%;
+}
+.index_logo {
+	margin-left: 3%;
+}
+.index div {
+	margin: 0 1% 3% 1%;
+	border-radius: 12px;
+	position: relative;
+	width: 30%;
+	max-width: 273px;
+	height: 74px;
+	display: inline-block;
+	box-shadow: 0px 0px 2px 2px #000000;
+	background: #1d1d1d;
+}
+.nifty {
+	min-width:270px;
+}
+.nifty:hover {
+	box-shadow: 0px 0px 1px 1px #292929;
+	cursor: pointer;
+}
+.nifty_text {
+	margin-left: 5%;
+	color: rgb(255, 255, 255);
+}
+#nifty_price {
+	margin-left: 5%;
+	color: rgb(255, 255, 255);
+}
+.niftyBank {
+	min-width: 270px;
+}
+.niftyBank:hover {
+	box-shadow: 0px 0px 1px 1px #292929;
+	cursor: pointer;
+}
+.niftyBank_text {
+	margin-left: 5%;
+	color: rgb(255, 255, 255);
+}
+#niftyBank_price {
+	margin-left: 5%;
+	color: rgb(255, 255, 255);
+}
+
+.topgainer_logo {
+    margin-left: 3%;
+}
+#gainer {
+	margin-left: 2%;
+	margin-bottom: 3%;
+}
+.gainer_div {
+	margin-left: 1%;
+    position: relative;
+	min-width: 152px;
+	width: 15%;
+    min-height: 152px;
+	height: 15%;
+    border-radius: 12px;
+	display: inline-block;
+	box-shadow: 0px 0px 2px 2px #000000;
+	background: #1d1d1d;
+}
+.gainer_div:hover {
+	box-shadow: 0px 0px 1px 1px #292929;
+	cursor: pointer;
+}
+#gainer > div > p, #gainer > div > pre {
+	margin-left: 2%;
+	color: rgb(255, 255, 255);
+}
+#gainer > div > img {
+	box-sizing: inherit;
+	object-fit: contain;
+	max-width: 36px;
+	max-height: 36px;
+	aspect-ratio: auto 36 / 36;
+}
+
+
+.toploser_logo {
+	margin-left: 3%;
+}
+#loser {
+	margin-left: 2%;
+	margin-bottom: 3%;
+}
+.loser_div {
+	margin-left: 1%;
+    position: relative;
+	min-width: 152px;
+	width: 15%;
+    min-height: 152px;
+	height: 15%;
+    border-radius: 12px;
+	display: inline-block;
+	box-shadow: 0px 0px 2px 2px #000000;
+	background: #1d1d1d;
+}
+.loser_div:hover {
+	box-shadow: 0px 0px 1px 1px #292929;
+	cursor: pointer;
+}
+#loser > div > p, #loser > div > pre {
+	margin-left: 2%;
+	color: rgb(255, 255, 255);
+}
+#loser > div > img {
+	width: 30%;
+	height: 30%;
+}
+
+.img_div {
+	margin-left: 2%;
+	height: 30px;
+	width: fit-content;
+	background: #000000;
+	position: relative;
+	border-radius: 5px;
+	box-shadow: 0px 0px 2px 2px #000000;
+
+}
+.equity_logo {
+	max-height: 100%;
+	max-width: 100%;
+	vertical-align: middle;
+}
+pre{
+	font-size: medium;
+}
+
+#loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/static/media/loading.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%;
+}

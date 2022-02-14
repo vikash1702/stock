@@ -1,0 +1,49 @@
+{% load static %}
+
+<!DOCTYPE HTML>	
+<html>	
+<head>
+<link rel="stylesheet" href="{% static 'css/detail.css' %}">
+<script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.stock.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<link rel="shortcut icon" type="image/png" href="{% static 'media/image/logo.png' %}"/>
+</head>
+<body>
+
+  <div id="chart"></div>
+
+  <div id='buy_sell'>
+    <div id='buy' onClick="buy_shares()">Buy</div>
+    <div id='sell' onClick="sell_shares()">Sell</div>    
+  </div>
+  <div id='buy_sell_form'>
+    <div class='type_delivery'>
+      <p>Type Delivery</p>
+    </div>
+    <div class="share_text">
+      <p>shares</p>
+    </div>
+    <div class='share_value'>
+      <input class="share_input" type="number" name="shares">
+    </div>
+    <div class="price_text">
+      <p>price</p>
+    </div>
+    <div class='price_value'>
+      <input class="share_input" type="number" name="shares">
+    </div>
+    <div class="submit_button"  >
+      <button type="submit" class="submit">Buy</button>
+    </div>
+  </div>
+
+</body>
+<script>
+  var csrftoken = '{{ csrf_token }}';
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+<script type='text/javascript' src="{% static 'js/detail.js' %}"></script>
+</html>
+  
